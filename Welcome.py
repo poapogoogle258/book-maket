@@ -109,7 +109,10 @@ def pay():
         print("ยกเลิกรายการเรียบร้อย")
         pass
     else:
-        print("เงินทอน :",total - a,"บาท")
+        if a - total < 0:
+            print("ยอดเงินไม่พอ")
+        else:
+            print("เงินทอน :",a-total,"บาท")
     
 def endHOME():
     while True :
