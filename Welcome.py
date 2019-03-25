@@ -7,7 +7,7 @@ def HOME():
     while True:
         selet=int(input("***กรุณาเลือกหมวดหนังสือ***\n"))
         if selet in {1,2,3}:
-        break
+            break
         print("คุณทำรายการไม่ถูกต้อง // กรุณาทำรายการใหม่")
     
     if selet==1:
@@ -36,7 +36,7 @@ def HOME():
         elif a==1.3:
             number=float(input("จำนวนที่ต้องการ(เล่ม) :"))
             total=total+number*125
-            meber.append(["สมการ ",125,number]
+            meber.append(["สมการ ",125,number])
             endHOME()
     elif selet==2:
         print(">2.1-วรรณคดี      "+"ราคา"+"เล่มละ269"+"บาท")
@@ -113,11 +113,11 @@ def pay():
     
 def endHOME():
     while True :
-        a=input("คุณต้องการทำรายการอื่นหรือไม่(y / n) : ")
-        if a in {'y','Y','n','N'}:
+        a=input("คุณต้องการทำรายการอื่นหรือไม่(yes / no) : ")
+        if a in {'yes','YES','no','NO'}:
             break
         print("กรุณาใส่ข้อมูลให้ถูกต้อง")
-    if a in {'y','Y'}:
+    if a in {'yes','YES'}:
         HOME()
     else:
         pay()    
@@ -177,8 +177,3 @@ while(True):
             
             break
     print("กรุณาใส่หรัสใหม่อีกครัง\n")
-
-    
-
-
-
