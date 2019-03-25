@@ -1,7 +1,5 @@
-total =0
-meber=[]
-
 def HOME():
+    global total
     clear()
     print("1-คณิตศาสตร์")
     print("2-ภาษาไทย")
@@ -88,6 +86,8 @@ clear = lambda: os.system('cls')
 color_greed= lambda : os.system('color 0a')
 color_common=lambda : os.system('color 0f')
 color_greed()
+total =0
+meber=[]
 welcome1="""
       ____                    _        __  __           _             _   
      |  _ \                  | |      |  \/  |         | |           | |  
