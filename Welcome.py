@@ -106,8 +106,10 @@ def pay():
     print("ถ้าต้องการยกเลิกสินค้า กด (-1) ")
     a=int(input("ยอดเงินที่รับมา :"))
     if a== -1:
+        print("ยกเลิกรายการเรียบร้อย")
         pass
-    print("เงินทอน :",total - a,"บาท")
+    else:
+        print("เงินทอน :",total - a,"บาท")
     
 def endHOME():
     while True :
