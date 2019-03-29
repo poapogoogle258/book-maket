@@ -40,6 +40,7 @@ if aa==1 :
 elif aa==2 :
         print("***คุณกำลังทำรายการชำระเงินผ่านทางธนาคาร***")
         print("***แสดงหลักฐานการโอนหรือใบสลิป (เลขที่รายการ)***")
+        print("ธนาคาร กสิกรไทย บัญชี 123-4-5678-9 ชื่อบัญชี Error" )
         while True :
             checknumber=input("(เลขที่รายการ)")
             if len(checknumber) == 15:
@@ -69,7 +70,13 @@ elif aa==2 :
                 Newdata.write(newdata)
                 localtion=newdata
                 break
+        with openr("list.txt",mode'a')as list_price:
+            list_price.write("%s|%d\n"%(checknumber,total+35))
+            for i in rebook:
+                list_price.write("\t%s|%s|%s"%(i[0],i[1],i[3]))
+            
         print("คุณทำรายการเสร็จสิ้นแล้ว ระบบกำลังตรวจสอบการความถูกต้องแล้วจัดส่งสินค้า Thank you")
 
     #******* แบบว่าอยากให้ที่รับค่ามา(บรรทัศ7.13.15)เก็บค่าไว้ในลิสเป็นฐานข้อมูลไว้อ่ะ*******
+    #เขียนยาวเลย
 
