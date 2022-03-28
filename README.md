@@ -4,4 +4,4 @@ Final python Project_CS61 100 lines<br>
 ตอนนั้นจะทำแต่ตอนนี้ขี้เกียจแล้ว ฝรรดีย์นะไอน้อง(6:47 AM.)
 
 
-![alt text](https://pbs.twimg.com/media/ERENt-aWAAEE8me.jpg)
+![alt text](http://i0.wp.com/www.thaismescenter.com/wp-content/uploads/2019/08/825.jpg)
